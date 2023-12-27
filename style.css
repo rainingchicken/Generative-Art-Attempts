@@ -10,3 +10,6 @@ canvas {
 position: relative;
 top: 40px; left: 400px;
 }
+script {
+  float: left;
+}
