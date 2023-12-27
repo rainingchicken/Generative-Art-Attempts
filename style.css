@@ -5,5 +5,8 @@ html, body {
 
 canvas {
   display: block;
-   position: absolute;
+ /* position: absolute;
+  */
+position: relative;
+top: 40px; left: 40px;
 }
