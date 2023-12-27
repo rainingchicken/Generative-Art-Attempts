@@ -3,13 +3,19 @@ html, body {
   padding: 0;
 }
 
-canvas {
+canvas1 {
   display: block;
  /* position: absolute;
   */
 position: relative;
 top: 40px; left: 400px;
 }
-script {
-  float: left;
+
+canvas2 {
+  display: block;
+ /* position: absolute;
+  */
+position: relative;
+top: 40px; left: 40;
 }
+
