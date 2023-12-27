@@ -3,19 +3,7 @@ html, body {
   padding: 0;
 }
 
-canvas1 {
+canvas {
   display: block;
- /* position: absolute;
-  */
-position: relative;
-top: 40px; left: 400px;
-}
-
-canvas2 {
-  display: block;
- /* position: absolute;
-  */
-position: relative;
-top: 40px; left: 40;
 }
 
