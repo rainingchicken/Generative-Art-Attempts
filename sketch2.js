@@ -1,6 +1,6 @@
 function setup() {
   let cnv2 = createCanvas(400, 400);
-  cnv2.position(0, 500);
+  cnv2.position(0, 500, 'absolute');
   var circleSize; //controls size of circle
   var circleColor; //controls filled color of the cicle created
 }
