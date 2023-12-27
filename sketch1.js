@@ -1,6 +1,6 @@
 function setup() {
   let cnv = createCanvas(400, 400);
-  cnv.id('canvas1');
+  cnv.position(0, 0);
 
 }
 
