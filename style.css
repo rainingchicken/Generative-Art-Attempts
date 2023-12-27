@@ -2,6 +2,17 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+#canvasWrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+  }
+
 canvas {
-  display: absolute;
+    position: absolute;
+  }
+canvas {
+  display: block;
 }
