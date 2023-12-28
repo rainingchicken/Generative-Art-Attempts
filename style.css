@@ -4,11 +4,7 @@ html, body {
   background-color: #101010;
 }
 
-h1 {
-  text-align: center;
-}
-
-h4 {
+#title {
   text-align: center;
 }
 
