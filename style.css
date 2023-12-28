@@ -7,8 +7,6 @@ html, body {
 h1, h4 {
   text-align: center;
   color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
 
 #artrow1 {
