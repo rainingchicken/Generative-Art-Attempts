@@ -5,8 +5,9 @@ html, body {
 }
 
 h1, h4 {
-  text-align: center;
   color: white;
+  text-align: center;
+  
 }
 
 #artrow1 {
