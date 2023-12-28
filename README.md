@@ -4,7 +4,7 @@ Art Portfolio
 I will be using this page to embed generative art from p5.js
 I use the online p5.js editor at https://editor.p5js.org. By File > Share > Embed, I copied the link and pasted each art in index.html.
 
-https://rainingchicken.github.io/attempt/
+https://rainingchicken.github.io/Generative-Art-Attempts/
 
 Fails:
 
