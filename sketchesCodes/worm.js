@@ -2,6 +2,7 @@ function setup() {
   createCanvas(400, 400);
   var circleSize; //controls size of circle
   var circleColor; //controls filled color of the cicle created
+  background(56,56,56);
 }
 
 function draw() {
