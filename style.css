@@ -3,6 +3,14 @@ html, body {
   padding: 0;
 }
 
+h1, h2 {
+  text-align: center;
+}
+
+#artrow1 {
+  text-align: center;
+}
+
 /*canvas {
   display: block;
 }
