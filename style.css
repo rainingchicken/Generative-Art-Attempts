@@ -1,11 +1,14 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #101010;
+  background-color: #303030;
 }
 
 h1, h4 {
   text-align: center;
+  color: white;
+  stroke: black;
+  stroke-width: 1px;
 }
 
 #artrow1 {
