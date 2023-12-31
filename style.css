@@ -1,38 +1,81 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #080808;
-  font-family: "Georgia", Serif;
+/*color scheme https://www.color-hex.com/color-palette/1545*/
+
+html,
+body {
+    margin: 0;
+    padding: 15px;
+    background-color: #000000;
+    font-family: "Gill Sans", sans-serif;
+    color: #bbbbbb;
+    text-align: center;
 }
 
-h1, h2, h3, h4 {
-  color: white;
-  text-align: center;
-  
+#logo {
+    /*centers image*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5rem;
+    height: auto;
+
 }
+
+#title {
+    padding: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {}
 
 .parent {
-   text-align: center;
-   border-style: double;
-   padding: 2rem 2rem;
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: #ffd700;
+    padding: 60px;
+    background-color: #111111;
 }
 
-.child {
-   display:inline;
-   padding: 2rem 2rem;
-}
- #goldenratio {
-  border: 1px solid white;
- }
+.child {}
 
- #representational {
-  border: 1px solid white;
- }
- #nonrep {
-  border: 1px solid white;
- }
+#goldenratio {}
 
-/*canvas {
-  display: block;
+#representational {}
+
+#nonrep {}
+
+#foot {
+    padding: 2rem 2rem;
 }
-*/
+
+/* https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#topbutton {
+    /* Hidden by default */
+    color: #000000;
+    text-shadow: #ffffff;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    background-color: #ffd700;
+    /* Set a background color */
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 2px 10px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 28px;
+    /* Increase font size */
+    outline: none;
+}
+
+#topbutton:hover {
+    background-color: #bbbbbb;
+    /* Add a dark-grey background on hover */
+
+}
