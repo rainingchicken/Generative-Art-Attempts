@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
-  
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
-  </head>
-  
-  
- <h1> Generative Art created with P5.js </h1>
- <h3> Instruction: All of the artworks are interactable via mouse movements and/or mouse clicks on each canvas. </h3>
+</head>
 
-  
-  <body>
-   <div class = 'parent'> 
-    <div class = 'child'>
-    <section id = "goldenratio">
-       <p> Golden Ratio </p>
-      <iframe style="width: 400px; height: 450px; overflow: hidden;"  scrolling="no" src="https://editor.p5js.org/rainwhenever/full/keG3hNrwN"></iframe>
-      <iframe style="width: 400px; height: 450px; overflow: hidden;"  scrolling="no" src="https://editor.p5js.org/rainwhenever/full/LqYRHZdI6"></iframe>
-       <h4> </h4>
-    </section>
+<img id='logo' src="rainingchickenlogo.png" alt="baby chick logo">
 
-    <section id = "representational">
-       <p> Representational </p>
-      <iframe style="width: 400px; height: 450px; overflow: hidden;"  scrolling="no" src="https://editor.p5js.org/rainwhenever/full/nbRTuYFVG"></iframe>
-      <iframe style="width: 400px; height: 450px; overflow: hidden;"  scrolling="no" src="https://editor.p5js.org/rainwhenever/full/FpAMzkwhk"></iframe>
-     <p> </p>
-    </section>
-    
-    <section id = "nonrep"> 
-       <p> Abstract </p>
-      <iframe style="width: 400px; height: 450px; overflow: hidden;"  scrolling="no" src="https://editor.p5js.org/rainwhenever/full/MmvO9NQ4P"></iframe>
-      <iframe style="width: 400px; height: 450px; overflow: hidden;"  scrolling="no" src="https://editor.p5js.org/rainwhenever/full/7BTMRMXE_"></iframe>
-      <iframe style="width: 400px; height: 450px; overflow: hidden;"  scrolling="no" src="https://editor.p5js.org/rainwhenever/full/XSX6B6RJT"></iframe>
-    <p> </p>
-    </section>
-       </div>
-     </div>
-  </body>
+<main>
+    <div id='title'>
+        <h1> Generative Art Created with P5.js </h1>
+        <h5> Instruction: All of the artworks are interactable via mouse movements and/or mouse clicks on each canvas.
+        </h5>
+    </div>
+</main>
+
+<body>
+    <div class='parent'>
+        <div class='child'>
+            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
+                src="https://editor.p5js.org/rainwhenever/full/keG3hNrwN"></iframe>
+            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
+                src="https://editor.p5js.org/rainwhenever/full/LqYRHZdI6"></iframe>
+
+
+            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
+                src="https://editor.p5js.org/rainwhenever/full/nbRTuYFVG"></iframe>
+            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
+                src="https://editor.p5js.org/rainwhenever/full/FpAMzkwhk"></iframe>
+
+
+            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
+                src="https://editor.p5js.org/rainwhenever/full/MmvO9NQ4P"></iframe>
+            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
+                src="https://editor.p5js.org/rainwhenever/full/7BTMRMXE_"></iframe>
+            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
+                src="https://editor.p5js.org/rainwhenever/full/XSX6B6RJT"></iframe>
+        </div>
+    </div>
+</body>
+
+
+<footer id='foot'>
+    <button onclick="scrolltotop()" id="topbutton" title="Scroll to Top"> ⮙ </button>
+    <p> <img src="https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png" width=5%>
+    </p>
+    <p><a href="https://github.com/rainingchicken/Generative-Art-Attempts/tree/main">rainingchicken</a>
+    </p>
+</footer>
+
+<script type="text/JavaScript">
+// Get the button:
+let mybutton = document.getElementById("topbutton");
+
+//when scrolling detected
+addEventListener("scroll", (event) => {
+    if (window.scrollY > 20) { //if scrolled pass current px
+        mybutton.style.display = "block"; //displays button to go to top
+    }
+    else {
+        mybutton.style.display = "none"; //if near top of screen no need to show button
+    }
+});
+  
+// when click scroll to the top of the document
+function scrolltotop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+</script>
 
 </html>
