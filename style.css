@@ -4,13 +4,13 @@ html, body {
   background-color: #080808;
 }
 
-h1, h4 {
+h1, h3, h4 {
   color: white;
   text-align: center;
   
 }
 
-#artrow1 {
+#goldenratio, #nonrep, #representational {
   text-align: center;
 }
 
