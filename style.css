@@ -14,11 +14,23 @@ h1, h2, h3, h4 {
 .parent {
    text-align: center;
    border-style: double;
+   padding: 2rem 2rem;
 }
 
 .child {
    display:inline;
+   padding: 2rem 2rem;
 }
+ #goldenratio {
+  border: 1px solid white;
+ }
+
+ #representational {
+  border: 1px solid white;
+ }
+ #nonrep {
+  border: 1px solid white;
+ }
 
 /*canvas {
   display: block;
