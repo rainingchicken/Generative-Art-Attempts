@@ -4,13 +4,19 @@ html, body {
   background-color: #080808;
 }
 
-h1, h3, h4 {
+h1,, h2, h3, h4 {
   color: white;
   text-align: center;
   
 }
 
-#goldenratio, #nonrep, #representational {
+#goldenratio {
+  text-align: center;
+}
+#representational {
+  text-align: center;
+}
+#nonrep {
   text-align: center;
 }
 
