@@ -11,20 +11,13 @@ h1, h2, h3, h4 {
   
 }
 
-#goldenratio {
-  text-align: center;
-  border-style: double;
-  display:inline;
+.parent {
+   text-align: center;
+   border-style: double;
 }
-#representational {
-  text-align: center;
-  border-style: double;
-  display:inline;
-}
-#nonrep {
-  text-align: center;
-  border-style: double;
-  display:inline;
+
+.child {
+   display:inline;
 }
 
 /*canvas {
