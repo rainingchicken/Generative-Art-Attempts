@@ -1,5 +1,7 @@
 function setup() {
-  createCanvas(400, 400);
+  var canv = createCanvas(400, 400);
+  canv.mouseOver(play);
+  canv.mouseOut(stop);
   var n; //number of sides of polygon
   var x; //circle x position on canvas
   var y; //circle y position
@@ -14,14 +16,24 @@ function draw() {
   x = mouseX; //spawns circle where mouse is
   y = mouseY;
   size = random(10, 150);
-  if (n <= 2) { //sides of shape is less than 2 then always spawn a circle
+  if (n <= 2) {
+    //sides of shape is less than 2 then always spawn a circle
     circle(x, y, size);
-  } else { //spawns random shape
+  } else {
+    //spawns random shape
     beginShape();
     for (var i = 0; i < n; i++) {
       vertex(random(width), random(height));
     }
     endShape(CLOSE);
   }
+}
 
+//stop animation
+function stop() {
+  noLoop();
+}
+//play animation
+function play() {
+  loop();
 }
