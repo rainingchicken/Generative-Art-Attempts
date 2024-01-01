@@ -3,7 +3,10 @@
 var goldenratio = (1 / 2) * (1 + 5 ** (1 / 2));
 
 function setup() {
-  createCanvas(400, 400);
+  //to prevent lag from unnecessarily activating when mouse on on convas
+  var canv = createCanvas(400, 400);
+  canv.mouseOver(play);
+  canv.mouseOut(stop);
 }
 
 function draw() {
@@ -48,6 +51,16 @@ function draw() {
   circle(0, 0, 50);
   pop();
 }
+
+//stop animation
+function stop() {
+  noLoop();
+}
+//play animation
+function play() {
+  loop();
+}
+
 //create theta [0, pi/2, pi, 3/2 pi, 2pi,...]
 function theta() {
   var turns = 100;
