@@ -4,15 +4,15 @@ let smoke = [];
 var vy;
 var y, bluealpha, redalpha, shake;
 function setup() {
-  createCanvas(400, 400);
-
+  var canv = createCanvas(400, 400);
+  canv.mouseOver(play);
+  canv.mouseOut(stop);
   for (let i = 0; i < height; i++) {
     sky.push(new Sky());
   }
 }
 
 function draw() {
-  background(0);
   y = 0;
   bluealpha = 300;
   redalpha = 50;
@@ -55,6 +55,14 @@ function draw() {
   pop();
 }
 
+//stop animation
+function stop() {
+  noLoop();
+}
+//play animation
+function play() {
+  loop();
+}
 //create background
 class Sky {
   constructor() {}
