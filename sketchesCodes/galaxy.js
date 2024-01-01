@@ -8,13 +8,16 @@ let golden, center; //define class of spiral and circle at center of galaxy
 let gas = [];
 let star = [];
 function setup() {
-  createCanvas(400, 400);
+  var canv = createCanvas(400, 400);
+  canv.mouseOver(play);
+  canv.mouseOut(stop);
   golden = new goldenboy();
   center = new Center();
-  for (let i = 0; i < width * 10; i++) {
+
+  for (let i = 0; i < 100; i++) {
     gas.push(new Gas());
   }
-  for (let i = 0; i < width * 10; i++) {
+  for (let i = 0; i < width; i++) {
     star.push(new Stars());
   }
   frameRate(30);
@@ -22,16 +25,16 @@ function setup() {
 
 function draw() {
   background(0);
-
   zoom = mouseX / 500;
-  push();
-  noFill();
-  stroke(255, 204, 0);
-  translate(width / 2, height / 2);
 
+  //create golden ratio
+  push();
   golden.createCurve(zoom);
   pop();
+
   coloralpha = 0.6;
+
+  //create yellow ellipse for dimension
   size = 200;
   for (let i = 0; i < gas.length; i++) {
     coloralpha -= 0.06;
@@ -40,12 +43,23 @@ function draw() {
   }
   center.create(zoom);
 
+  //create random dots as stars
   staralpha = 10;
   for (let i = 0; i < star.length; i++) {
     coloralpha -= 0.06;
     star[i].create(zoom, staralpha);
   }
 }
+
+//stop animation
+function stop() {
+  noLoop();
+}
+//play animation
+function play() {
+  loop();
+}
+
 //create theta [0, pi/2, pi, 3/2 pi, 2pi,...]
 function theta() {
   var turns = 100;
@@ -93,6 +107,10 @@ class goldenboy {
     this.y = sint();
   }
   createCurve(zoom) {
+    noFill();
+    stroke(255, 204, 0);
+    translate(width / 2, height / 2);
+
     //half of galaxy
     beginShape();
 
