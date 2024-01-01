@@ -1,5 +1,7 @@
 function setup() {
-  createCanvas(400, 400);
+  var canv = createCanvas(400, 400);
+  canv.mouseOver(play);
+  canv.mouseOut(stop);
 }
 
 function draw() {
@@ -8,13 +10,13 @@ function draw() {
   el.create();
 
   ellipse(229 + mouseX / 70, 167 + mouseY / 70, 36, 70); //ear right
-  
+
   ellipse(165 + mouseX / 50, 239 + mouseY / 50, 142 * 2, 186); //face
-  
+
   fill(200);
   ellipse(165 + mouseX / 70, 239 + mouseY / 70, 20, 16); //nose
-  fill (255);
-  
+  fill(255);
+
   //whiskers
   line(
     180 + mouseX / 70,
@@ -52,12 +54,21 @@ function draw() {
     70 + 1 + mouseX / 70,
     230 + 31 + mouseY / 70
   );
-  
+
   //table
   rect(0, height - height / 3, width, 200);
 
   let m = new mouse(mouseX, mouseY, 50); //create mouse object
   m.create();
+}
+
+//stop animation
+function stop() {
+  noLoop();
+}
+//play animation
+function play() {
+  loop();
 }
 
 class earleft {
@@ -93,7 +104,7 @@ class mouse {
     circle(this.x - 15, this.y - 20, this.size / 4);
     arc(this.x, this.y, this.size, this.size, PI, 0, CHORD); //body of mouse
     noFill();
-    arc(this.x + 50, this.y, 50, 50,  HALF_PI, PI); //tail of mouse
+    arc(this.x + 50, this.y, 50, 50, HALF_PI, PI); //tail of mouse
     fill(255);
   }
 }
