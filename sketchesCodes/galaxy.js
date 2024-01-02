@@ -17,7 +17,7 @@ function setup() {
   for (let i = 0; i < 100; i++) {
     gas.push(new Gas());
   }
-  for (let i = 0; i < width; i++) {
+  for (let i = 0; i < width*10; i++) {
     star.push(new Stars());
   }
   frameRate(30);
