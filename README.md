@@ -1,16 +1,17 @@
 # Generative Art Portfolio
 
-[Portfolio Website] (https://rainingchicken.github.io/Generative-Art-Portfolio/)
+ [Portfolio Website](https://rainingchicken.github.io/Generative-Art-Portfolio/)
 
-<p> https://rainingchicken.github.io/Generative-Art-Portfolio/ </p>
+<h5> (https://rainingchicken.github.io/Generative-Art-Portfolio/) </h5>
 
 ## Purpose
 <p>
 This will be the website in which I will display my collection of art created through programming in javascript in p5js. Visitors can hover their mouse over a canvas to interact with it, such as clicking to make a volcano explode more or moving the mouse around as a cat attentively watches. Simple quality of life features include scroll to top of screen button and filter system showing the categorized art such as representational and abstract. There is also a link that brings them to this github reportoir where they can view codes of the website as well as the codes used to create the art pieces which are in the folder sketchesCodes.
  </p>
- 
- <p align="center">
-![portfolio sample](portfolio sample.png) (Updated 1/2/2024)
+
+
+ <p align="center"> ![portfoliosample](https://github.com/rainingchicken/Generative-Art-Portfolio/assets/154983686/5d6a6125-ea33-4107-ae6a-af6b80d0ebb4)
+ (Updated 1/2/2024)
  </p>
 
  ## Inspiration
