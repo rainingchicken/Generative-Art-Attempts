@@ -9,13 +9,11 @@
 This will be the website in which I will display my collection of art created through programming in javascript in p5js. Visitors can hover their mouse over a canvas to interact with it, such as clicking to make a volcano explode more or moving the mouse around as a cat attentively watches. Simple quality of life features include scroll to top of screen button and filter system showing the categorized art such as representational and abstract. There is also a link that brings them to this github reportoir where they can view codes of the website as well as the codes used to create the art pieces which are in the folder sketchesCodes.
  </p>
 
+![portfoliosample](https://github.com/rainingchicken/Generative-Art-Portfolio/assets/154983686/5d6a6125-ea33-4107-ae6a-af6b80d0ebb4)
+(Updated 1/2/2024)
 
- <p align="center"> ![portfoliosample](https://github.com/rainingchicken/Generative-Art-Portfolio/assets/154983686/5d6a6125-ea33-4107-ae6a-af6b80d0ebb4)
- (Updated 1/2/2024)
- </p>
-
- ## Inspiration
- I have nothing to do and am doubting my degree. To make some use of it, I decided to apply mathematics to art. This serves to also test my knowledge. Being able to put it into practical use feels good, however, it is also feels like a waste of time. There was also little that I actually remember from school. I don't know if one would call it a passion, but I find that this is fun. I enjoy the creative and design aspect as well as the coding itself. I find myself wanting to figure out the coding like trying to solve a puzzle. Even as I am doing some other activities, I would think of how I would write the codes and look up and read information from MDN web doc, w3schools.com, geeksforgeeks, stack overflow, and more. While doing this I am learning about website design and development. I learned a little bit about graphic designs as a bonus. 
+## Inspiration
+I have nothing to do and am doubting my degree. To make some use of it, I decided to apply mathematics to art. This serves to also test my knowledge. Being able to put it into practical use feels good, however, it is also feels like a waste of time. There was also little that I actually remember from school. I don't know if one would call it a passion, but I find that this is fun. I enjoy the creative and design aspect as well as the coding itself. I find myself wanting to figure out the coding like trying to solve a puzzle. Even as I am doing some other activities, I would think of how I would write the codes and look up and read information from MDN web doc, w3schools.com, geeksforgeeks, stack overflow, and more. While doing this I am learning about website design and development. I learned a little bit about graphic designs as a bonus. 
 
 
 ## How to embed
