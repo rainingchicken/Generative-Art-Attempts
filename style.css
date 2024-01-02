@@ -30,7 +30,26 @@ h3,
 h4,
 h5 {}
 
-.parent {
+
+.sortbuttons button {
+    color: #bbbbbb;
+    margin: 2px 2px 15px;
+    padding: 2px 5px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: #ffd700;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.sortbuttons button:hover {
+    background-color: #bbbbbb;
+    color: #000000;
+}
+
+main {
     border-radius: 10px;
     border: 1px;
     border-style: solid;
@@ -39,7 +58,17 @@ h5 {}
     background-color: #111111;
 }
 
-.child {}
+
+iframe {
+    border-radius: 10px;
+    margin: 30px;
+    overflow: hidden;
+    width: 400px;
+    height: 445px;
+    padding: 10px;
+    background-color: #111111;
+
+}
 
 #goldenratio {}
 

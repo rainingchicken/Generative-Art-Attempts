@@ -2,76 +2,54 @@
 <html lang="en">
 
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
-
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
 </head>
 
-<img id='logo' src="rainingchickenlogo.png" alt="baby chick logo">
-
-<main>
-    <div id='title'>
+<body>
+    <header>
+        <img id='logo' src="rainingchickenlogo.png" alt="baby chick logo">
         <h1> Generative Art Created with P5.js </h1>
         <h5> Instruction: All of the artworks are interactable via mouse movements and/or mouse clicks on each canvas.
         </h5>
+
+    </header>
+
+    <div class='sortbuttons'>
+        FILTER
+        <button onclick="showall()" title="show all art"> All </button>
+        <button onclick="showmath()" title="show mathematical art"> Math </button>
+        <button onclick="showrep()" title="show representational art"> Representational </button>
+        <button onclick="showabstract()" title="show abstract art"> Abstract </button>
     </div>
-</main>
 
-<body>
-    <div class='parent'>
-        <div class='child'>
-            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
-                src="https://editor.p5js.org/rainwhenever/full/keG3hNrwN"></iframe>
-            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
-                src="https://editor.p5js.org/rainwhenever/full/LqYRHZdI6"></iframe>
+    <main>
+        <!-- math: using math functions to draw -->
+        <!-- rep: representational -->
+        <!-- abstract: nonrepresentational art -->
+        <iframe class='math rep' title="galaxy" src="https://editor.p5js.org/rainwhenever/full/keG3hNrwN"></iframe>
+        <iframe class="math rep" title="hurricane" src="https://editor.p5js.org/rainwhenever/full/LqYRHZdI6"></iframe>
+        <iframe class="rep" title="volcano" src="https://editor.p5js.org/rainwhenever/full/nbRTuYFVG"></iframe>
+        <iframe class="rep" title="cat" src="https://editor.p5js.org/rainwhenever/full/FpAMzkwhk"></iframe>
+        <iframe class="abstract" title="two toned bg"
+            src="https://editor.p5js.org/rainwhenever/full/MmvO9NQ4P"></iframe>
+        <iframe class="abstract" title="worm" src="https://editor.p5js.org/rainwhenever/full/7BTMRMXE_"></iframe>
+        <iframe class="abstract" title="random shapes"
+            src="https://editor.p5js.org/rainwhenever/full/XSX6B6RJT"></iframe>
+    </main>
 
+    <footer id='foot'>
+        <button onclick="scrolltotop()" id="topbutton" title="Scroll to Top"> ⮙ </button>
+        <p> <img src="https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png" width=5%>
+        </p>
+        <p> <a href="https://github.com/rainingchicken/Generative-Art-Attempts/tree/main">rainingchicken</a>
+        </p>
+    </footer>
 
-            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
-                src="https://editor.p5js.org/rainwhenever/full/nbRTuYFVG"></iframe>
-            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
-                src="https://editor.p5js.org/rainwhenever/full/FpAMzkwhk"></iframe>
-
-
-            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
-                src="https://editor.p5js.org/rainwhenever/full/MmvO9NQ4P"></iframe>
-            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
-                src="https://editor.p5js.org/rainwhenever/full/7BTMRMXE_"></iframe>
-            <iframe style="width: 400px; height: 450px; overflow: hidden;" scrolling="no"
-                src="https://editor.p5js.org/rainwhenever/full/XSX6B6RJT"></iframe>
-        </div>
-    </div>
+    <!-- putting scripts at bottom of body improves display speed -w3schools -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
-
-<footer id='foot'>
-    <button onclick="scrolltotop()" id="topbutton" title="Scroll to Top"> ⮙ </button>
-    <p> <img src="https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png" width=5%>
-    </p>
-    <p><a href="https://github.com/rainingchicken/Generative-Art-Attempts/tree/main">rainingchicken</a>
-    </p>
-</footer>
-
-<script type="text/JavaScript">
-// Get the button:
-let mybutton = document.getElementById("topbutton");
-
-//when scrolling detected
-addEventListener("scroll", (event) => {
-    if (window.scrollY > 20) { //if scrolled pass current px
-        mybutton.style.display = "block"; //displays button to go to top
-    }
-    else {
-        mybutton.style.display = "none"; //if near top of screen no need to show button
-    }
-});
-  
-// when click scroll to the top of the document
-function scrolltotop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-</script>
 
 </html>
