@@ -1,0 +1,42 @@
+//color theory on how same color look different in different context
+var c; //color
+var x, y, w, h; //x cord, y coord, width, height of small rectangles
+function setup() {
+  var canv = createCanvas(600, 300);
+  canv.mouseOver(play);
+  canv.mouseOut(stop);
+  c = color(random(255), random(255), random(255));
+  x = width / 2;
+  y = height / 2;
+  w = width / 8;
+  h = height / 4;
+}
+
+function draw() {
+  background(0);
+  noStroke();
+  fill(187, 187, 187); //left is warm tone
+  rect(0, 0, width / 2, height);
+  fill(9, 38, 74); //right is cool tone
+  rect(width / 2, 0, width / 2, height);
+  //the rect in the middle of the two tones
+  fill(changecolor());
+
+  rect(x / 2 - w / 2, y - h / 2, w, h);
+  rect(x + w + w / 2, y - h / 2, w, h);
+}
+
+function changecolor() {
+  if (mouseIsPressed) {
+    c = color(random(255), random(255), random(255));
+  }
+  return c;
+}
+//stop animation
+function stop() {
+  noLoop();
+}
+//play animation
+function play() {
+  loop();
+}
