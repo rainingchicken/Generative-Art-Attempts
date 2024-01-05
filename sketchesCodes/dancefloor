@@ -1,0 +1,27 @@
+var size;
+function setup() {
+  var canv = createCanvas(400, 400);
+  canv.mouseOver(play);
+  canv.mouseOut(stop);
+  frameRate(3);
+  background(0);
+}
+
+function draw() {
+  stroke(255);
+  size = 100;
+  for (let x = 0; x < width; x += size) {
+    for (let y = 0; y < height; y += size) {
+      fill(random(255), random(255), random(255), 200);
+      rect(x, y, size);
+    }
+  }
+}
+//stop animation
+function stop() {
+  noLoop();
+}
+//play animation
+function play() {
+  loop();
+}
