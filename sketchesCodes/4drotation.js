@@ -1,6 +1,6 @@
 //experimenting with 3d
 function setup() {
-  var canv = createCanvas(200, 200, WEBGL); //small canvas to not hurt eyes looking at this piece
+  var canv = createCanvas(300, 200, WEBGL); //small canvas to not hurt eyes looking at this piece
   canv.mouseOver(play);
   canv.mouseOut(stop);
 }
